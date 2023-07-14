@@ -1,0 +1,46 @@
+package com.api.apisalud.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.api.apisalud.entities.Pacientes;
+import com.api.apisalud.persistence.ImplePacienteDao;
+
+@Service
+public class PacienteService {
+
+    @Autowired
+    ImplePacienteDao implePacienteDao;
+
+    @Autowired
+    ModelMapper modelMapper;
+
+
+//CREAR PACIENTE
+    public void newPaciente(Pacientes paciente) {
+        Optional<Pacientes> existePaciente = implePacienteDao.findById(paciente.getCc());
+        if (existePaciente.isPresent()) {
+            throw new RuntimeException("No se puede guardar, paciente con este nombre ya se encuentra registrado");
+        }
+    }
+
+    //LISTAR TODOS LOS PACIENTES
+    public List<Pacientes> findAllPacientes(){
+        List<Pacientes> pacientes = implePacienteDao.findAll();
+        return pacientes;
+    }
+
+    public Pacientes findPacienteById(Long cc) {
+        Optional<Pacientes> encontrarPaciente = implePacienteDao.findById(cc);
+        if (encontrarPaciente.isEmpty()) {
+            throw new RuntimeException("No se encontró un paciente con la cédula proporcionada, intente nuevamente");
+        }
+        return encontrarPaciente.get();
+    }
+
+
+}
