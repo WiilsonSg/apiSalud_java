@@ -21,7 +21,10 @@ Características
 ---
 Instalación y Configuración de ApiSalud 💻
 
-...CONTINUARA 🧭
+Este proyecto se realizo en [vsCode](https://code.visualstudio.com/) 
+
+Para ejecutar esta API debes contar con las siguientes extenciones
+
 
 GRUPO 🤘
 ---
