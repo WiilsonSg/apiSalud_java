@@ -25,6 +25,22 @@ Este proyecto se realizo en [vsCode](https://code.visualstudio.com/)
 
 Para ejecutar esta API debes contar con las siguientes extenciones
 
+<img src="https://github.com/WiilsonSg/apiSalud_java/blob/main/apiSalud_java/.mvn/wrapper/img/Captura%20de%20pantalla%202023-07-12%20183538.png" width="650" height="150"/>
+<img src="https://github.com/WiilsonSg/apiSalud_java/blob/main/apiSalud_java/.mvn/wrapper/img/Captura%20de%20pantalla%202023-07-12%20183644.png" width="650" height="150"/>
+
+Instalación
+---
+Clona el repositorio 
+
+```
+https://github.com/WiilsonSg/apiSalud_java.git
+```
+En la terminal ejecuta
+```
+https://github.com/WiilsonSg/apiSalud_java.git
+```
+
+Cambia tus datos en la conexión con la [DN](https://github.com/WiilsonSg/apiSalud_java/blob/main/apiSalud_java/src/main/java/com/api/apisalud/resources/application.properties)
 
 GRUPO 🤘
 ---
