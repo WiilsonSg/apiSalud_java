@@ -49,6 +49,11 @@ En la terminal ejecuta
 mvn clean istall
 ```
 Cambia tus datos en la conexión con la [DN](https://github.com/WiilsonSg/apiSalud_java/blob/main/apiSalud_java/src/main/java/com/api/apisalud/resources/application.properties)
+----
+[Capturas](https://github.com/Cks726/ATENEA_JS/tree/main/recursos/medical-app)
+----
+
+
 
 GRUPO 🤘
 ---
