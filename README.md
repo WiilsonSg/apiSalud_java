@@ -9,6 +9,14 @@ _Este proyecto REST API permite getionar citas médicas con diferentes especiali
 <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" width="100" height="100"/>&nbsp;
 
 
+Front End
+
+<img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" width="80" height="80">&nbsp;
+
+frontEnd [apisalud.java](https://github.com/Cks726/ATENEA_JS/tree/main/Client/medical-app)
+
+
+
 Características
  ---
 * 🚶 Crea pacientes y doctores.
@@ -17,11 +25,6 @@ Características
 * 😷 Obten una cita médica específica por su Id.
 * 👾 Actualización de información personal de pacientes y doctores.
 
-Front End
-
-<img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" width="80" height="80">&nbsp;
-
-frontEnd [apisalud.java](https://github.com/Cks726/ATENEA_JS/tree/main/Client/medical-app)
 
 
 ---
