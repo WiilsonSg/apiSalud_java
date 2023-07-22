@@ -2,6 +2,7 @@ package com.api.apisalud.controller;
 
 import java.util.List;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -24,6 +25,8 @@ public class DoctorController {
     @Autowired
     DoctoresService docService;
 
+    @Autowired
+    private ModelMapper modelMapper;
 
     //CREAR DOCTOR
     @PostMapping ("/created")

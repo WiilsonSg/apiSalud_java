@@ -1,6 +1,7 @@
 package com.api.apisalud.converter;
 
 import com.api.apisalud.utils.Especialidad;
+
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
@@ -18,3 +19,4 @@ public Especialidad convertToEntityAttribute(String nombre) {
         }
 
 }
+

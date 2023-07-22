@@ -1,5 +1,8 @@
 package com.api.apisalud.services;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,6 +29,17 @@ public class PacienteService {
         if (existePaciente.isPresent()) {
             throw new RuntimeException("No se puede guardar, paciente con este nombre ya se encuentra registrado");
         }
+
+        // Calcula la edad a partir de la fecha de nacimiento y la fecha actual
+        LocalDate birthdateLocal = paciente.getCumple().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        LocalDate currentDate = LocalDate.now();
+        Period period = Period.between(birthdateLocal, currentDate);
+        int edad = period.getYears();
+
+        // Establece la edad del paciente antes de guardarlo
+        paciente.setEdad(edad);
+
+        implePacienteDao.save(paciente);
     }
 
     //LISTAR TODOS LOS PACIENTES
